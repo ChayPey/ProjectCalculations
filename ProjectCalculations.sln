@@ -4,13 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCalculations", "ProjectCalculations\ProjectCalculations.csproj", "{79B6293E-8826-499F-A6BB-F5C26B4CC383}"
-	ProjectSection(ProjectDependencies) = postProject
-		{43F928F6-893F-4770-A74F-DF34D5F9E3F9} = {43F928F6-893F-4770-A74F-DF34D5F9E3F9}
-	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PressureLossCalculation", "..\PressureLossCalculation\PressureLossCalculation\PressureLossCalculation.csproj", "{CF4B401A-7C63-4891-AEC2-C9D6C56FED54}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestProjectPressureLossCalculation", "..\PressureLossCalculation\NUnitTestProjectPressureLossCalculation\NUnitTestProjectPressureLossCalculation.csproj", "{43F928F6-893F-4770-A74F-DF34D5F9E3F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PressureLossCalculation", "PressureLossCalculation\PressureLossCalculation.csproj", "{F82A073F-B35B-436B-9C0E-26600493365C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,14 +17,10 @@ Global
 		{79B6293E-8826-499F-A6BB-F5C26B4CC383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79B6293E-8826-499F-A6BB-F5C26B4CC383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79B6293E-8826-499F-A6BB-F5C26B4CC383}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF4B401A-7C63-4891-AEC2-C9D6C56FED54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF4B401A-7C63-4891-AEC2-C9D6C56FED54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF4B401A-7C63-4891-AEC2-C9D6C56FED54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF4B401A-7C63-4891-AEC2-C9D6C56FED54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43F928F6-893F-4770-A74F-DF34D5F9E3F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43F928F6-893F-4770-A74F-DF34D5F9E3F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43F928F6-893F-4770-A74F-DF34D5F9E3F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43F928F6-893F-4770-A74F-DF34D5F9E3F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82A073F-B35B-436B-9C0E-26600493365C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82A073F-B35B-436B-9C0E-26600493365C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82A073F-B35B-436B-9C0E-26600493365C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82A073F-B35B-436B-9C0E-26600493365C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
