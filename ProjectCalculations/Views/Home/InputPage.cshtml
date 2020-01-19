@@ -1,0 +1,55 @@
+﻿@model PressureLossCalculation.InputModel
+@{
+    ViewData["Title"] = "Ввод значений";
+}
+<div align="center"><h3>Расчета потерь давления при движении продуктов сгорания по газоходу</h3></div>
+<form>
+    <header>
+        <h1 align="center">Ввод данных №@KeepData.Results[Model.Id].InputModels.Count Ид пользователя: @Model.Id</h1>
+    </header>
+    <div>
+        <table border="0" align="center">
+            <tr>
+                <th>Площадь сечения, м2</th>
+                <td><input class="text-center" type="number" min="0.0001" step="0.0001" name="data.F" value="2.4" size="8" /></td>
+            </tr>
+            <tr>
+                <th>Периметр сечения, м</th>
+                <td><input class="text-center" type="number" min="0.0001" step="0.0001" name="data.P" value="6.4" size="8" /></td>
+            </tr>
+            <tr>
+                <th>Плотность газа, кг/м3</th>
+                <td><input class="text-center" type="number" min="0.0001" step="0.0001" name="data.P0" value="1.1" size="8" /></td>
+            </tr>
+            <tr>
+                <th>Температура газа, С</th>
+                <td><input class="text-center" type="number" min="0.0001" step="0.0001" name="data.T0" value="800" size="8" /></td>
+            </tr>
+            <tr>
+                <th>Рассход газа, м3/с</th>
+                <td><input class="text-center" type="number" min="0.0001" step="0.0001" name="data.V0" value="2" size="8" /></td>
+            </tr>
+            <tr>
+                <th>Длина участка, м</th>
+                <td><input class="text-center" type="number" min="0.0001" step="0.0001" name="data.L" value="6" size="8" /></td>
+            </tr>
+            <tr>
+                <th>Изменение высоты, м &nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <td><input class="text-center" type="number" min="0.0001" step="0.0001" name="data.H" value="3" size="8" /></td>
+            </tr>
+            <tr>
+                <th>Тип участка</th>
+                <td><input class="text-center" type="number" min="0" max="4" step="1" name="data.Type" value="2" size="8" /></td>
+            </tr>
+        </table>
+        <div align="center">
+            <button class="mt-4" type="submit" formaction="/Home/ResultPage">Завершить расчет</button>
+            <button class="mt-4" type="submit" formaction="/Home/InputPage">Продолжить расчет</button>
+        </div>
+    </div>
+
+    <div align="right">
+        <button class="mt-4" type="submit" formaction="/Home/Index">Начать сначала</button>
+    </div>
+    <input class="text-center" type="hidden"  name="data.Id" value="@Model.Id"/>
+</form>

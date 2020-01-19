@@ -1,0 +1,44 @@
+﻿@model ProjectCalculations.Models.ResultCalcul
+@{
+    ViewData["Title"] = "Результаты расчетов";
+}
+
+<div align="center"><H1>Результаты Расчетов</H1></div>
+
+<div>
+    <table border="0" align="center">
+        <tr>
+            <th>Колличество участков:</th>
+            <td align="right">@Model.Size() шт.</td>
+        </tr>
+
+        <tr>
+            <th>Потери давления на трение: </th>
+            <td align="right">@Math.Round(Model.Tr(), 4) Па.</td>
+        </tr>
+
+        <tr>
+            <th>Потери давления на местное сопротивление: </th>
+            <td align="right">@Math.Round(Model.Tm(), 4) Па.</td>
+        </tr>
+
+        <tr>
+            <th>Геометрические потери давления: </th>
+            <td align="right">@Math.Round(Model.Tg(), 4) Па.</td>
+        </tr>
+
+        <tr>
+            <th>Сумарные потери давленния: </th>
+            <td align="right">@Math.Round(Model.All(), 4) Па.</td>
+        </tr>
+
+    </table>
+
+    <form>
+        <div align="center">
+            <button class="mt-4" type="submit" formaction="/Home/Index">Начать с начала</button>
+
+            <input type="hidden" name="data.Id" value="@Model.id" />
+        </div>
+    </form>
+</div>
